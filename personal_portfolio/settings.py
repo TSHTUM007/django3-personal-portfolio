@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '=g+i$hs0m*!trp6uav-#x0oq3_k$c@p6lz+wqi01$ak2qy36=='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['zombo.pythonanywhere.com']
 
 
 # Application definition
@@ -123,7 +123,8 @@ USE_TZ = True
 MEDIA_URL = '/media/'
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-# 
+#
