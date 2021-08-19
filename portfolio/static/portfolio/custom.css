@@ -1,5 +1,5 @@
 .navbar-nav .nav-link {
-    color: rgba(0,0,0,1) !important;
+    color: rgb(58, 21, 21) !important;
 }
 
 .navbar-nav .nav-link:hover {
@@ -7,14 +7,15 @@
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', serif;
 }
+
 
 #blogtitle {
     font-size: 6rem;
 }
 
-@media (min-width: 992px) {
+@media (max-height: 100%) {
     #hometext {
         font-size: 4rem;
     }

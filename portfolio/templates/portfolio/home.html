@@ -4,7 +4,7 @@
 
 {% block content %}
 
-<div class="row justify-content-center my-3">
+<div class="row justify-content-center mb-3">
   <div class="col-5">
     <img src="{% static 'portfolio/me.jpg' %}" class="img-fluid">
   </div>
@@ -12,11 +12,11 @@
 
 <div class="row justify-content-center mb-3">
   <div class="col-md-9 text-center">
-    <h1 id="hometext" class="font-weight-bold">Tumisang is an Icon living who is constantly learning 😊😊😊😊😊</h1>
+    <h1 id="hometext" class="font-weight-bold">Your Fav Data Scientist😊</h1>
   </div>
 </div>
 
-<h2 class="mt-5">Portfolio</h2>
+<h2 class="mt-5">  <center>PROJECTS </center> </h2>
 <hr>
 <div class="row">
   {% for project in projects %}
@@ -25,7 +25,7 @@
 
     {% if project.url %}
     <a href="{{ project.url }}">
-      <img src="{{ project.image.url }}" class="img-fluid mb-2">
+      <img src="{{ project.image.url }}"  class="img-fluid mb-2">
     </a>
     {% else %}
 

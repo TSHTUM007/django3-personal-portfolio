@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '=g+i$hs0m*!trp6uav-#x0oq3_k$c@p6lz+wqi01$ak2qy36=='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['zombo.pythonanywhere.com']
+ALLOWED_HOSTS = ['zombo.pythonanywhere.com','localhost','127.0.0.1']
 
 
 # Application definition
@@ -128,6 +128,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 try:
-    from .local_settings import *
+    from .base import *
 except ImportError:
     print("Looks like no local settings file so you must be on production")
